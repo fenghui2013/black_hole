@@ -1,0 +1,58 @@
+{
+    "pwd":"/home/aispeech/black_hole",
+    "blackhole": {
+        "ip":"10.12.7.115",
+        "port":8989,
+        "daemon":"false"
+    },
+    "log":{
+        "blackhole":{
+            "path":"/tmp/blackhole.log",
+            "level":"debug"
+        },
+        "translate":{
+            "path":"/tmp/translate.log",
+            "level":"debug"
+        }
+    },
+    "daemon": {
+        "stdin":"/dev/null",
+        "stdout":"/dev/null",
+        "stderr":"/dev/null",
+        "pidfile":"/tmp/bh.pid"
+    },
+    "translate_table": [
+        {
+            "ip":"10.12.7.115",
+            "port":30000,
+            "readable":"true",
+            "writable":"true",
+            "role":"normal",
+            "result.result": {
+                "_id_min":"",
+                "_id_max":"*"
+            },
+            "log.log": {
+                "_id_min":"",
+                "_id_max":"*"
+            },
+            "audio.fs.files": {
+                "filename_min": "",
+                "filename_max": "*",
+                "_id_min": "",
+                "_id_max": "*"
+            },
+            "audio.fs.chunks": {
+                "files_id_min": "",
+                "files_id_max": "*"
+            }
+        },
+        {
+            "ip":"10.12.7.115",
+            "port":50000,
+            "readable":"false",
+            "writable":"true",
+            "role":"bak"
+        }
+    ]
+}
