@@ -1,9 +1,14 @@
-black_hole
-==========
+## black_hole
 A middleware is basing on mongodb for storing big data, that is any size.
 
-config
-==========
+## start and stop
+```
+python black_hole.py start
+python black_hole.py stop
+```
+
+## config
+```
 {
     "pwd":"path/to/black_hole",
     "blackhole": {
@@ -62,3 +67,4 @@ config
         }
     ]
 }
+```
