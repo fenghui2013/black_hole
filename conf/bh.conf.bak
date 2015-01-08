@@ -1,5 +1,5 @@
 {
-    "pwd":"/home/aispeech/black_hole",
+    "pwd":"path/to/black_hole",
     "blackhole": {
         "ip":"10.12.7.115",
         "port":8989,
